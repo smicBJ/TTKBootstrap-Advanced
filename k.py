@@ -28,3 +28,124 @@ LEAD = (FONT_FAMILY, 20)
 BODY = (FONT_FAMILY, 16)
 STRIKE = (FONT_FAMILY, 16, STRIKETHROUGH)
 ITALIC = (FONT_FAMILY, 16, ITALIC)
+
+DEFAULT = 'default'
+DEFAULT_THEME = 'journal'
+TTK_CLAM = 'clam'
+TTK_ALT = 'alt'
+TTK_DEFAULT = 'default'
+
+# TTKBootstrap Constants
+# Meter Constants
+FULL = 'full'
+SEMI = 'semi'
+
+# Progressbar Constants
+DETERMINATE = 'determinate'
+INDETERMINATE = 'indeterminate'
+
+# Bootstyle Colors
+PRIMARY = 'primary'
+SECONDARY = 'secondary'
+SUCCESS = 'success'
+DANGER = 'danger'
+WARNING = 'warning'
+INFO = 'info'
+LIGHT = 'light'
+DARK = 'dark'
+
+# Bootstyle Types
+OUTLINE = 'outline'
+LINK = 'link'
+TOGGLE = 'toggle'
+INVERSE = 'inverse'
+STRIPED = 'striped'
+TOOLBUTTON = 'toolbutton'
+ROUND = 'round'
+SQUARE = 'square'
+
+# Treeview Constants
+TREE = 'tree'
+HEADINGS = 'headings'
+TREEHEADINGS = 'tree headings'
+
+# State Constants
+READONLY = 'readonly'
+
+# TKInter Constants
+TRUE = True
+FALSE = False
+NO = FALSE
+YES = TRUE
+ON = TRUE
+OFF = FALSE
+N = "n"
+S = "s"
+W = "w"
+E = "e"
+NW = "nw"
+SW = "sw"
+NE = "ne"
+SE = "se"
+NS = "ns"
+EW = "ew"
+NSEW = "nsew"
+CENTER = "center"
+NONE = "none"
+X = "x"
+Y = "y"
+BOTH = "both"
+LEFT = "left"
+TOP = "top"
+RIGHT = "right"
+BOTTOM = "bottom"
+RAISED = "raised"
+SUNKEN = "sunken"
+FLAT = "flat"
+RIDGE = "ridge"
+GROOVE = "groove"
+SOLID = "solid"
+HORIZONTAL = "horizontal"
+VERTICAL = "vertical"
+NUMERIC = "numeric"
+CHAR = "char"
+WORD = "word"
+BASELINE = "baseline"
+INSIDE = "inside"
+OUTSIDE = "outside"
+SEL = "sel"
+SEL_FIRST = "sel.first"
+SEL_LAST = "sel.last"
+END = "end"
+INSERT = "insert"
+CURRENT = "current"
+ANCHOR = "anchor"
+ALL = "all"
+NORMAL = "normal"
+DISABLED = "disabled"
+ACTIVE = "active"
+HIDDEN = "hidden"
+CASCADE = "cascade"
+CHECKBUTTON = "checkbutton"
+COMMAND = "command"
+RADIOBUTTON = "radiobutton"
+SEPARATOR = "separator"
+SINGLE = "single"
+BROWSE = "browse"
+MULTIPLE = "multiple"
+EXTENDED = "extended"
+DOTBOX = "dotbox"
+UNDERLINE = "underline"
+PIESLICE = "pieslice"
+CHORD = "chord"
+ARC = "arc"
+FIRST = "first"
+LAST = "last"
+BUTT = "butt"
+PROJECTING = "projecting"
+BEVEL = "bevel"
+MITER = "miter"
+MOVETO = "moveto"
+SCROLL = "scroll"
+UNITS = "units"
+PAGES = "pages"
