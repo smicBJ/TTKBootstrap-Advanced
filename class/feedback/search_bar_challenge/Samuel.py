@@ -1,30 +1,52 @@
-FONT_FAMILY = "Roboto"
-BOLD = "bold"
-ROMAN = "roman"
-STRIKETHROUGH = "overstrike"
-ITALIC = "italic"
+import ttkbootstrap as tb
+from ttkbootstrap.constants import *
+from K import *
 
-PXS = 5
-PS = 10
-PM = 20
-PL = 30
-PXL = 40
+class SearchBar(tb.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+        self.pack(padx=PM, pady=PM, fill=X)
+        self.entry = tb.Entry(self)
+        self.button = tb.Button(self, text='Search')
 
-H1 = (FONT_FAMILY, 39, BOLD)
-H2 = (FONT_FAMILY, 32, BOLD)
-H3 = (FONT_FAMILY, 28, BOLD)
-H4 = (FONT_FAMILY, 24, BOLD)
-H5 = (FONT_FAMILY, 20, BOLD)
-H6 = (FONT_FAMILY, 16, BOLD)
+        self.entry.pack(side=LEFT,fill=X,expand=True)
+        self.button.pack(side=RIGHT)
 
-DISPLAY1 = (FONT_FAMILY, 76, ROMAN)
-DISPLAY2 = (FONT_FAMILY, 70, ROMAN)
-DISPLAY3 = (FONT_FAMILY, 62, ROMAN)
-DISPLAY4 = (FONT_FAMILY, 54, ROMAN)
-DISPLAY5 = (FONT_FAMILY, 47, ROMAN)
-DISPLAY6 = (FONT_FAMILY, 39, ROMAN)
+class ButtonGroup(tb.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+        self.pack(padx=PM, pady=PM, fill=X)
 
-LEAD = (FONT_FAMILY, 20)
-BODY = (FONT_FAMILY, 16)
-STRIKE = (FONT_FAMILY, 16, STRIKETHROUGH)
-ITALIC = (FONT_FAMILY, 16, ITALIC)
+        self.submit_button = tb.Button(self, text='submit', bootstyle=SUCCESS)
+        self.cancel_button = tb.Button(self, text='cancel', bootstyle=(OUTLINE, SECONDARY))
+
+        self.submit_button.pack(side=RIGHT)
+        self.cancel_button.pack(side=RIGHT)
+
+
+class App(tb.Window):
+    def __init__(self):
+        super().__init__(themename='darkly')
+
+        self.geometry('1920x1080')
+        self.subtitle = tb.Label(self, font=H1,text='SMIC RECORDS')
+        self.subtitle_2 = tb.Label(self, text='Subtitle')
+        self.search = SearchBar(self)
+
+        self.subtitle_3 = tb.Label(self, text='No Search Entry')
+        # self.button = tb.Button(self, text='Submit', bootstyle='SUCCESS')
+
+        self.subtitle.pack(padx=10, pady=10, anchor=W)
+
+        self.subtitle_2.pack(padx=10, pady=10, anchor=W)
+        # self.textbox.pack(padx=10, fill=X)
+        self.search.pack()
+        self.subtitle_3.pack(padx=10,expand=True)
+        #self.button.pack(padx=10, expand=True, anchor=E)
+        self.button_group = ButtonGroup(self)
+
+
+if __name__ == '__main__':
+    app = App()
+    app.place_window_center()
+    app.mainloop()
