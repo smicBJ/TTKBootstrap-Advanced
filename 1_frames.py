@@ -1,6 +1,6 @@
 import requests as req
 import ttkbootstrap as tb
-from k import *
+from helpers.K import *
 
 
 class SearchBar(tb.Frame):
