@@ -1,6 +1,6 @@
 import ttkbootstrap as tb
 from ttkbootstrap.constants import *
-from k import *
+from K import *
 
 
 # class ButtonGroup(tb.Frame):
